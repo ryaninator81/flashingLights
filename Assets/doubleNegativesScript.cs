@@ -246,4 +246,17 @@ public class doubleNegativesScript : MonoBehaviour
         }
         leds[1].material.mainTexture = ledColours[0];
     }
+
+    private string TwitchHelpMessage = @"Use '!{0} press 1' to press a button.";
+
+    IEnumerator ProcessTwitchCommand(string command) // Almost exactly like british slang :P
+    {
+        var parts = command.ToLowerInvariant().Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
+
+        if (parts.Length == 2 && parts[0] == "press" && parts[1].Length == 1 && "12345".Contains(parts[1]))
+        {
+            yield return null;
+            OnButtonPress(button[Int32.Parse(parts[1]) - 1]);
+        }
+    }
 }
