@@ -13,7 +13,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: flashingLights
   title: Flashing Lights
-  description: 'Flashing Lights 1.3
+  description: 'Flashing Lights 1.31
 
     Morse code doesn''t have 12 dots. I''ve no idea what it says...
 
@@ -27,6 +27,6 @@ MonoBehaviour:
 
 
     Manual available here: https://ktane.timwi.de/HTML/Flashing%20Lights.html'
-  version: 1.3
+  version: 1.31
   outputFolder: build
   previewImage: {fileID: 2800000, guid: dca23ecb5d41741ec93a153d9c663b00, type: 3}
